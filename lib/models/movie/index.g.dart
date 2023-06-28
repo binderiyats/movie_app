@@ -8,7 +8,8 @@ part of 'index.dart';
 
 MovieModel _$MovieModelFromJson(Map<String, dynamic> json) => MovieModel(
       id: json['id'] as int,
-      imgUrl: json['imgUrl'] as String,
+      title: json['title'] as String,
+      imgUrl: json['imageUrl'] as String,
       description: json['description'] as String?,
       durationMin: json['durationMin'] as int?,
       publishedYear: json['publishedYear'] as int?,
@@ -18,6 +19,7 @@ MovieModel _$MovieModelFromJson(Map<String, dynamic> json) => MovieModel(
 Map<String, dynamic> _$MovieModelToJson(MovieModel instance) =>
     <String, dynamic>{
       'id': instance.id,
+      'title': instance.title,
       'imgUrl': instance.imgUrl,
       'publishedYear': instance.publishedYear,
       'durationMin': instance.durationMin,

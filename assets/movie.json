@@ -1,1 +1,87 @@
-{}
+[
+  {
+    "id": 1,
+    "title": "Life of Pi",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNTg2OTY2ODg5OF5BMl5BanBnXkFtZTcwODM5MTYxOA@@._V1_.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  },
+
+  {
+    "id": 2,
+    "title": "Spirited Away",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  },
+  {
+    "id": 3,
+    "title": "Avatar: The Way Of Water",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  },
+
+  {
+    "id": 5,
+    "title": "Eternals",
+    "imageUrl": "https://cdn.marvel.com/content/1x/eternals_cover.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  },
+
+  {
+    "id": 6,
+    "title": "Hunger Games",
+    "imageUrl": "https://patch.com/img/cdn/users/559459/2012/03/raw/307929484d150c465ae30749b0f893cf.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  },
+
+  {
+    "id": 7,
+    "title": "Kiki's delivery service",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BYTQ1ZTM1ZTgtN2Q2Ny00YjFkLTliNjEtN2I1ZmY5ZTY1OTEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  },
+  {
+    "id": 8,
+    "title": "Dune",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BODI0YjNhNjUtYjM0My00MTUwLWFlYTMtMWI2NGUzYjNjNGQzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  },
+  {
+    "id": 9,
+    "title": "Big Hero 6",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMDliOTIzNmUtOTllOC00NDU3LWFiNjYtMGM0NDc1YTMxNjYxXkEyXkFqcGdeQXVyNTM3NzExMDQ@._V1_.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  },
+  {
+    "id": 10,
+    "title": "Interstellar",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "publishedYear": 2012,
+    "durationMin": 150,
+    "type": "Adventure",
+    "description": "lorem jnfdjfnd"
+  }
+]
