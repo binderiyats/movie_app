@@ -3,7 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:movie_app_new/screens/movies.dart';
 import 'package:movie_app_new/screens/profile.dart';
-import 'package:movie_app_new/screens/wishList.dart';
+import 'package:movie_app_new/screens/wish_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

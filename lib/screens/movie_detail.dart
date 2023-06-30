@@ -78,6 +78,21 @@ class MovieDetailPage extends StatelessWidget {
                           ),
                         ),
                       ),
+                      SafeArea(
+                        child: Align(
+                          alignment: Alignment.topRight,
+                          child: IconButton(
+                            onPressed: () => () {},
+                            icon: Icon(
+                              true
+                                  ? Icons.favorite
+                                  : Icons.favorite_border_outlined,
+                              color: Colors.white.withOpacity(0.8),
+                              size: 35,
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),

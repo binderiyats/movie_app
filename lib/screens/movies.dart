@@ -50,7 +50,9 @@ class _MoviesPageState extends State<MoviesPage> {
                   child: Row(
                     children: List.generate(
                       _specialMovie.length,
-                      ((index) => SpecialCard(_specialMovie[index])),
+                      ((index) => SpecialCard(
+                            _specialMovie[index],
+                          )),
                     ),
                   ),
                 ),
@@ -69,7 +71,9 @@ class _MoviesPageState extends State<MoviesPage> {
                   child: Wrap(
                     children: List.generate(
                       snapshot.data!.length,
-                      (index) => MovieCard(snapshot.data![index]),
+                      (index) => MovieCard(
+                        snapshot.data![index],
+                      ),
                     ),
                   ),
                 ),
