@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:movie_app_new/providers/common.dart';
+import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -14,7 +15,11 @@ class _LoginPageState extends State<LoginPage> {
   final _passwordControl = TextEditingController();
 
   void _onSubmit() {
-    setState(() {});
+    setState(() {
+      if (_formKey.currentState!.validate()) {
+        Provider.of<CommonProvider>(context, listen: false).onLogin();
+      }
+    });
   }
 
   @override

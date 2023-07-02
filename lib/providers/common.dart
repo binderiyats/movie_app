@@ -12,6 +12,9 @@ class CommonProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  List<MovieModel> get wishMovies =>
+      movies.where((element) => isWishMovie(element)).toList();
+
   void addWishList(int id) {
     if (wishListIds.contains(id)) {
       wishListIds.remove(id);
@@ -24,6 +27,10 @@ class CommonProvider extends ChangeNotifier {
   void changeCurrentIdx(int idx) {
     currentIdx = idx;
     notifyListeners();
+  }
+
+  bool isWishMovie(MovieModel data) {
+    return wishListIds.any((element) => element == data.id);
   }
 
   void onLogin() {

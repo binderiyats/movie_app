@@ -1,45 +1,27 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:movie_app_new/models/movie/index.dart';
+import 'package:movie_app_new/providers/common.dart';
 import 'package:movie_app_new/widgets/movie_card.dart';
+import 'package:provider/provider.dart';
 
-class WishListPage extends StatefulWidget {
+class WishListPage extends StatelessWidget {
   const WishListPage({Key? key}) : super(key: key);
 
   @override
-  State<WishListPage> createState() => _WishListPageState();
-}
-
-class _WishListPageState extends State<WishListPage> {
-  Future<List<MovieModel>> _getMovie() async {
-    String res =
-        await DefaultAssetBundle.of(context).loadString("assets/movie.json");
-    return MovieModel.fromList(jsonDecode(res));
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<MovieModel>>(
-      future: _getMovie(),
-      builder: ((context, snapshot) {
-        if (snapshot.hasData) {
-          return Padding(
-            padding: EdgeInsets.only(left: 10),
-            child: Wrap(
-              children: List.generate(
-                [].length,
-                (index) => MovieCard(
-                  [][index],
-                ),
+    return Consumer<CommonProvider>(
+      builder: ((context, provider, child) {
+        return Padding(
+          padding: EdgeInsets.only(left: 10),
+          child: Wrap(
+            children: List.generate(
+              provider.wishMovies.length,
+              (index) => MovieCard(
+                provider.wishMovies[index],
               ),
             ),
-          );
-        } else {
-          return CircularProgressIndicator();
-        }
+          ),
+        );
       }),
     );
   }

@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:movie_app_new/models/movie/index.dart';
+import 'package:movie_app_new/providers/common.dart';
 import 'package:movie_app_new/widgets/movie_card.dart';
 import 'package:movie_app_new/widgets/movie_special_card.dart';
+import 'package:provider/provider.dart';
 
 class MoviesPage extends StatefulWidget {
   const MoviesPage({Key? key}) : super(key: key);
@@ -18,7 +20,9 @@ class _MoviesPageState extends State<MoviesPage> {
   Future<List<MovieModel>> _getMovie() async {
     String res =
         await DefaultAssetBundle.of(context).loadString("assets/movie.json");
-    return MovieModel.fromList(jsonDecode(res));
+    List<MovieModel> data = MovieModel.fromList(jsonDecode(res));
+    Provider.of<CommonProvider>(context, listen: false).setMovies(data);
+    return data;
   }
 
   @override
