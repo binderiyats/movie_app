@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:movie_app_new/models/movie/index.dart';
 import 'package:movie_app_new/providers/common.dart';
 import 'package:provider/provider.dart';
+import 'package:movie_app_new/utils/index.dart';
 
 class MovieDetailPage extends StatefulWidget {
   final MovieModel data;
@@ -79,7 +80,7 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                                   height: 20,
                                 ),
                                 Text(
-                                  "${widget.data.publishedYear} | ${widget.data.durationMin} | ${widget.data.type}",
+                                  "${widget.data.publishedYear} | ${Utils.minToString(widget.data.durationMin)} | ${widget.data.type}",
                                   style: TextStyle(
                                       color: Colors.white.withOpacity(0.9),
                                       fontSize: 18),
